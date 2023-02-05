@@ -1,10 +1,18 @@
+
+
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export default function Document() {
+import React from 'react'
+
+export default function Document({
+  children,
+}: {
+  children: React.ReactDOM;
+}) {
   return (
     <Html lang="en">
       <Head />
-      <body>
+      <body className='bg-white flex justify-center text-center space-x-4'>
         <Main />
         <NextScript />
       </body>
